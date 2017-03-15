@@ -1,0 +1,12 @@
+ <div ng-repeat="book in books">
+     <div class="book-item book-item-red">
+        <img src="{{book.image}}" width="200">
+        <div class="book-info">
+        	<h3>{{book.title | titleCase}}</h2>
+        	<h4>{{book.author | titleCase}}</h4>
+        	<p>{{book.date | date }}</p>
+        	<button type="button" class="btn btn-xs btn-success"  ng-click="editBook(book)">Edit</button>
+        	<button type="button" class="btn btn-xs btn-warning" ng-click="deleteBook(book)">Delete</button>
+        </div>
+    </div>
+</div>

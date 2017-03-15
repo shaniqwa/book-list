@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Open+Sans');
+body{
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h3{
+	color: #ecd98e;
+	font-family: 'Gentium Book Basic', serif;
+}
+h3{
+	margin-top: 5px;
+}
+
+.margin-top-30{
+	margin-top: 30px;
+}
+div[class*="book-item-"]{
+	border-radius: 15px;
+}
+.book-item{
+	float:left;
+	width:200px;
+	margin: 10px;
+	background-color: #fe2234;
+}
+.book-info{
+	padding:10px;
+}
+.ng-invalid {
+    border-color: red !important;
+  }
