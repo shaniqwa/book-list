@@ -1,8 +1,15 @@
 'use strict';
 angular.module('bookList')
-.controller('bookCtrl', [ '$scope', '$modal', '$log', 'BookService',function ($scope, $modal, $log, BookService) {
+.controller('bookCtrl', [ '$scope', '$modal', '$filter', '$log', 'BookService',function ($scope, $modal,$filter, $log, BookService) {
   $scope.books = BookService.getAllBooks();
+
    $scope.editBook = function(book){
+
+    $scope.$watch('book.date', function() {
+        book.date = $filter('date')(book.date, 'dd/MM/yyyy'); 
+    });
+
+
       var modalInstance = $modal.open({
                 templateUrl: '../../views/modal-form.html',
                 controller: 'ModalInstanceCtrl',
@@ -38,4 +45,6 @@ angular.module('bookList')
          }
       });
    }
+
+  
 }]);

@@ -22,8 +22,9 @@
             <label>Date</label>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                <input type="date" class="form-control" ng-model="book.date" ng-pattern="/^((\d{4})-(\d{2})-(\d{2})|(\d{2})\/(\d{2})\/(\d{4}))$/">
+                <input type="text" class="form-control" ng-model="book.date" ng-pattern="/^((\d{4})-(\d{2})-(\d{2})|(\d{2})\/(\d{2})\/(\d{4}))$/">
             </div>
+            <span class="help">Format: dd/mm/yyyy</span>
             <p ng-show="form.editForm.$error.pattern" class="help-block">Not a valid date</span>
             <p ng-show="form.editForm.$error.date" class="help-block">Not a valid date</span>
         </div>

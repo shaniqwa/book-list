@@ -29,4 +29,9 @@ div[class*="book-item-"]{
 }
 .ng-invalid {
     border-color: red !important;
-  }
+}
+.help{
+	font-size: 12px;
+    margin-top: 5px;
+    color: gray;
+}
