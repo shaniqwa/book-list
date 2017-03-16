@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+   <title>My Book List</title>
+   <meta charset="utf-8"/>
+   <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="/assets/css/style.css" rel="stylesheet"/>
+</head>
+<body ng-app="bookList">
+   <div class="container">
+      <div class="row margin-top-30">
+         <div class="col-md-6">
+            <h1>My Book List</h1>
+         </div>
+      </div>
+         <div ng-view></div>
+   </div>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/assets/js/ui-bootstrap-tpls-0.9.0.min.js"></script>
+<script src="/bower_components/angular-camelcase/angular-camelcase.min.js"></script>
+<script src="/bower_components/bootbox.js/bootbox.js"></script>
+<script src="/scripts/app.js"></script>
+<script src="/scripts/app-config.js"></script>
+<script src="/scripts/controllers/book.js"></script>
+<script src="/scripts/controllers/modalInstance.js"></script>
+<script src="/scripts/services/books.js"></script>
+<script src="/scripts/filters/titleCase.js"></script>
+</body>
+</html>
